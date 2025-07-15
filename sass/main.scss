@@ -1,21 +1,24 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-$pgreen: #82D173;
-$pgray: #857E7B;
-$pviolet: #59344F;
-$psunset: #FFCB77;
-$ppolygreen: #274029;
+// Tus colores
+$pgreen:    hsl(110, 51%, 64%);
+$pgray:     #DEDEDE;
+$pviolet:   #59344F;
+$psunset:   #FFCB77;
+$ppolygreen:#274029;
 
-//Custom Mastermind theme
+// Mapa de colores personalizados
 $master-colors: (
-    "pgreen": $pgreen,
-    "pgray": $pgray
-    "pviolet": $pviolet
-    "psunset": $psunset
-    "ppolygreen": $ppolygreen
+  "pgreen":     $pgreen,
+  "pgray":      $pgray,
+  "pviolet":    $pviolet,
+  "psunset":    $psunset,
+  "ppolygreen": $ppolygreen
 );
 
-$theme-colors:map-merge($master-colors, $theme-colors);
+// Fusionamos con los colores de tema predeterminados
+$theme-colors: map-merge($master-colors, $theme-colors);
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+// Importamos el resto de Bootstrap ya con nuestros overrides
+@import "../node_modules/bootstrap/scss/bootstrap";
