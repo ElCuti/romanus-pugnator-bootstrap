@@ -1,1 +1,21 @@
-@import "../node_modules/bootstrap/scss/bootstrap"
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$pgreen: #82D173;
+$pgray: #857E7B;
+$pviolet: #59344F;
+$psunset: #FFCB77;
+$ppolygreen: #274029;
+
+//Custom Mastermind theme
+$master-colors: (
+    "pgreen": $pgreen,
+    "pgray": $pgray
+    "pviolet": $pviolet
+    "psunset": $psunset
+    "ppolygreen": $ppolygreen
+);
+
+$theme-colors:map-merge($master-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
