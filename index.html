@@ -70,10 +70,12 @@
         <h2>Nuestra Camiseta</h2>
         <div class="d-flex justify-content-evenly align-items-evenly">
             <div>
-                <img src="./imagenes/camiseta1.png" height="600px" alt="Camiseta frontal">
+                <img src="./imagenes/camiseta1.png" height="600px" alt="Camiseta frontal" data-bs-toggle="modal"
+                        data-bs-target="#producto1">
             </div>
             <div>
-                <img src="./imagenes/camiseta1.2.png" height="600px" alt="Camiseta trasera">
+                <img src="./imagenes/camiseta1.2.png" height="600px" alt="Camiseta trasera" data-bs-toggle="modal"
+                        data-bs-target="#producto2">
             </div>
         </div>
     </div>
@@ -112,96 +114,141 @@
                             honor y superación. Porque aquí nadie observa desde la grada: aquí todos somos combatientes.
                             Y
                             tú, ¿estás listo para tu próxima contienda?</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="button" class="btn btn-outline-pviolet text-center">CONTACTAR</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="col text-center container">
-            <h3>Especificaciones</h3>
-            <p>Desde Romanus Pugnator siempre buscamos que nuestros productos tengan la mayor calidad, por ello, nuestra indumentaria esta preparada para el máximo rendimiento </p>
-            <table class="table table-warning table-striped table-sm table-hover">
-                <tbody class="align-middle">
-                    <tr>
-                        <td class="fw-bold">Material</td>
-                        <td>100% Poliéster </td>
-                        
-                    </tr>
-                    <tr>
-                        <td class="fw-bold">Lavado</td>
-                        <td>Agua caliente en máquina </td>
-                        
-                    </tr>
-                    <tr>
-                        <td class="fw-bold">Color del modelo</td>
-                        <td>Negro con detalles en blanco </td>
-                        
-                    </tr>
-                    <tr>
-                        <td class="fw-bold">ECO</td>
-                        <td>Totalmente reciclable </td>
-                        
-                    </tr>
-                    
-                    <table class="table table-warning table-striped table-sm table-hover">
-                        <h3>Guia de tallas</h3>
-                <thead>
-                            <tr>
-                                <th scope="col">Talla</th>
-                                <th scope="col">XXS</th>
-                                <th scope="col">XS</th>
-                                <th scope="col">S</th>
-                                <th scope="col">M</th>
-                                <th scope="col">L</th>
-                                <th scope="col">XL</th>
-                                <th scope="col">XXL</th>
-                            </tr>
-                        </thead>
-                        <tbody class="align-middle">
-                            <tr>
-                                <td>Pecho (cm)</td>
-                                <td>72-80</td>
-                                <td>80-88</td>
-                                <td>88-96</td>
-                                <td>96-104</td>
-                                <td>104-112</td>
-                                <td>112-124</td>
-                                <td>124-136</td>
-                            </tr>
-                            <tr>
-                                <td>Cintura (cm)</td>
-                                <td>57-65</td>
-                                <td>65-73</td>
-                                <td>73-81</td>
-                                <td>81-89</td>
-                                <td>89-97</td>
-                                <td>97-109</td>
-                                <td>109-121</td>
-                            </tr>
-                            <tr>
-                                <td>Cadera (cm)</td>
-                                <td>72-80</td>
-                                <td>80-88</td>
-                                <td>88-96</td>
-                                <td>96-104</td>
-                                <td>104-112</td>
-                                <td>112-124</td>
-                                <td>124-136</td>
-                            </tr>
-                            <tr>
-                                <td>Altura (cm)</td>
-                                <td> -170 </td>
-                                <td>170-183</td>
-                                <td>170-183</td>
-                                <td>170-183</td>
-                                <td>170-183</td>
-                                <td>170-183</td>
-                                <td>170-183</td>
-                            </tr>
-                    </main>
+    </div>
+    <div class="col text-center container">
+        <h3>Especificaciones</h3>
+        <p>Desde Romanus Pugnator siempre buscamos que nuestros productos tengan la mayor calidad, por ello, nuestra
+            indumentaria esta preparada para el máximo rendimiento </p>
+        <table class="table table-warning table-striped table-sm table-hover">
+            <tbody class="align-middle">
+                <tr>
+                    <td class="fw-bold">Material</td>
+                    <td>100% Poliéster </td>
+
+                </tr>
+                <tr>
+                    <td class="fw-bold">Lavado</td>
+                    <td>Agua caliente en máquina </td>
+
+                </tr>
+                <tr>
+                    <td class="fw-bold">Color del modelo</td>
+                    <td>Negro con detalles en blanco </td>
+
+                </tr>
+                <tr>
+                    <td class="fw-bold">ECO</td>
+                    <td>Totalmente reciclable </td>
+
+                </tr>
+
+                <table class="table table-warning table-striped table-sm table-hover">
+                    <h3>Guia de tallas</h3>
+                    <thead>
+                        <tr>
+                            <th scope="col">Talla</th>
+                            <th scope="col">XXS</th>
+                            <th scope="col">XS</th>
+                            <th scope="col">S</th>
+                            <th scope="col">M</th>
+                            <th scope="col">L</th>
+                            <th scope="col">XL</th>
+                            <th scope="col">XXL</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td>Pecho (cm)</td>
+                            <td>72-80</td>
+                            <td>80-88</td>
+                            <td>88-96</td>
+                            <td>96-104</td>
+                            <td>104-112</td>
+                            <td>112-124</td>
+                            <td>124-136</td>
+                        </tr>
+                        <tr>
+                            <td>Cintura (cm)</td>
+                            <td>57-65</td>
+                            <td>65-73</td>
+                            <td>73-81</td>
+                            <td>81-89</td>
+                            <td>89-97</td>
+                            <td>97-109</td>
+                            <td>109-121</td>
+                        </tr>
+                        <tr>
+                            <td>Cadera (cm)</td>
+                            <td>72-80</td>
+                            <td>80-88</td>
+                            <td>88-96</td>
+                            <td>96-104</td>
+                            <td>104-112</td>
+                            <td>112-124</td>
+                            <td>124-136</td>
+                        </tr>
+                        <tr>
+                            <td>Altura (cm)</td>
+                            <td> -170 </td>
+                            <td>170-183</td>
+                            <td>170-183</td>
+                            <td>170-183</td>
+                            <td>170-183</td>
+                            <td>170-183</td>
+                            <td>170-183</td>
+                        </tr>
+ <!-- Modal de imagen -->
+            <div class="modal fade" id="producto1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Camiseta (Frontal)</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-pgray">
+                            <div class="d-flex">
+                                <div class="align-middle">
+                                    <img src="./imagenes/camiseta1.png" alt="Imagen camiseta frontal"
+                                        width="470px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Modal de imagen -->
+            <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Camiseta (Trasera)</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-pgray">
+                            <div class="d-flex">
+                                <div class="align-middle">
+                                    <img src="./imagenes/camiseta1.2.png" alt="Imagen camiseta trasera"
+                                        width="470px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        </main>
 
 
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                        crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                            crossorigin="anonymous"></script>
 </body>
