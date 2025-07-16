@@ -20,7 +20,7 @@
 </head>
 
 <body class="bg-pgray">
-    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+    <nav class="navbar bg-dark navbar-expand-lg sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand p-0" href="index.html">
                 <img src="./imagenes/logo.png" class="rounded-circle" alt="Logo Encabezado" height="74">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <div>
+    <div class="mt-3">
         <h1 class="text-center titulo">Romanus Pugnator</h1>
         <h2 class="text-center fs-5 text-center ">Vístete para la batalla. Entrena como un gladiador</h2>
     </div>
@@ -79,6 +79,46 @@
             </div>
         </div>
     </div>
+    <div class="text-center">
+        <a href="#" target="_blank"><button type="button" class="btn btn-outline-success">COMPRAR</button></a>
+    </div>
+    <!-- Modal de imagen -->
+    <div class="modal fade" id="producto1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Camiseta (Frontal)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-pgray">
+                    <div class="d-flex">
+                        <div class="align-middle">
+                            <img src="./imagenes/camiseta1.png" alt="Imagen camiseta frontal" width="470px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de imagen -->
+    <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Camiseta (Trasera)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-pgray">
+                    <div class="d-flex">
+                        <div class="align-middle">
+                            <img src="./imagenes/camiseta1.2.png" alt="Imagen camiseta trasera" width="470px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <h2 class="text-center pt-5">¿Que es Romanus Pugnator?</h2>
@@ -212,7 +252,7 @@
                     </tbody>
                 </table>
     </div>
-    <h2 class="text-center pt-5">Opiniones de nuestro clientes</h2>
+    <h2 class="text-center pt-5">Nuestro clientes</h2>
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -220,9 +260,9 @@
                     <img src="./imagenes/modelo1.png" class="card-img-top" alt="Imagen cliente 1">
                     <div class="card-body bg-psunset">
                         <h5 class="card-title">Carlos Sanchez</h5>
-                        <p class="card-text">¡Me encanta! Desde el primer momento que llego a mi casa no puedo parar de
+                        <p class="card-text">"¡Me encanta! Desde el primer momento que llego a mi casa no puedo parar de
                             usarla, su tejido hace que sea muy transpirable y comoda de usar para ir al gimnasio, la
-                            recomiendo!</p>
+                            recomiendo!"</p>
                         <button type="button" class="btn btn-md btn-pviolet" data-bs-toggle="popover"
                             data-bs-placement="top" data-bs-title="Carlos Sanchez"
                             data-bs-content="Carlos, México, 31 años, bombero">Perfil de Carlos</button>
@@ -234,8 +274,8 @@
                     <img src="./imagenes/modelo2.png" class="card-img-top " alt="Imagen cliente 2">
                     <div class="card-body bg-psunset">
                         <h5 class="card-title">Martina Romero</h5>
-                        <p class="card-text">Desde el momento que descubrí la ropa de Romanus Pugnator para hacer mis
-                            entrenamientos de Crossfit, no soy capaz de ir a entrenar sin mi camiseta</p>
+                        <p class="card-text">"Desde el momento que descubrí la ropa de Romanus Pugnator para hacer mis
+                            entrenamientos de Crossfit, no soy capaz de ir a entrenar sin mi camiseta"</p>
                         <button type="button" class="btn btn-md btn-pviolet" data-bs-toggle="popover"
                             data-bs-placement="top" data-bs-title="Martina Romero"
                             data-bs-content="Martina, España, 27 años, Crossfit">Perfil de Martina</button>
@@ -247,9 +287,9 @@
                     <img src="./imagenes/modelo3.png" class="card-img-top" alt="Imagen cliente 3">
                     <div class="card-body bg-psunset">
                         <h5 class="card-title">Lucia Hernandez</h5>
-                        <p class="card-text">¡Es increible! ¿Como podía ser que no conociera Romanus Pugnatur antes?
+                        <p class="card-text">"¡Es increible! ¿Como podía ser que no conociera Romanus Pugnatur antes?
                             Desde que me compre esta camiseta para entrenar, me siento mucho mas comoda entrenando
-                            gracias a su transpiribilidad</p>
+                            gracias a su transpiribilidad"</p>
                         <button type="button" class="btn btn-md btn-pviolet" data-bs-toggle="popover"
                             data-bs-placement="top" data-bs-title="Lucia Hernandez"
                             data-bs-content="Lucia, España, 23 años, runner amateur">Perfil de Lucia</button>
@@ -258,46 +298,39 @@
             </div>
         </div>
     </div>
+    <h2 class="text-center pt-5">Nuestras Tiendas</h2>
+    <div class="container-fluid pb-5">
+        <ul class="list-group text-center w-50 mx-auto border-radius">
+            <li class="list-group-item">Madrid: Calle de Fuencarral, 123, Local 2, 28004 Madrid <a
+                    class="text-decoration-none text-reset" href="#"><i class="bi bi-telephone-fill"></i></a> <a
+                    class="text-decoration-none text-reset" href="#"><i class="bi bi-clock"></i></a></li>
+            <li class="list-group-item">Barcelona: Carrer de Balmes, 45, Local 1, 08007 Barcelona <a
+                    class="text-decoration-none text-reset" href="#"><i class="bi bi-telephone-fill"></i></a> <a
+                    class="text-decoration-none text-reset" href="#"><i class="bi bi-clock"></i></a></li>
+            <li class="list-group-item">Almería: Calle Real, 7, Local 3, 04001 Almería <a
+                    class="text-decoration-none text-reset" href="#"><i class="bi bi-telephone-fill"></i></a> <a
+                    class="text-decoration-none text-reset" href="#"><i class="bi bi-clock"></i></a></li>
+        </ul>
     </div>
-    <!-- Modal de imagen -->
-    <div class="modal fade" id="producto1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-warning">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Camiseta (Frontal)</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-pgray">
-                    <div class="d-flex">
-                        <div class="align-middle">
-                            <img src="./imagenes/camiseta1.png" alt="Imagen camiseta frontal" width="470px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de imagen -->
-    <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-warning">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Camiseta (Trasera)</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-pgray">
-                    <div class="d-flex">
-                        <div class="align-middle">
-                            <img src="./imagenes/camiseta1.2.png" alt="Imagen camiseta trasera" width="470px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     </main>
+    <!--Pie de página-->
+    <footer class="navbar navbar-dark bg-dark text-center">
+        <div class="mx-auto  text-light">
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-patch-question-fill"></i>
+                    Preguntas Frecuentes</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-phone-fill"></i>
+                    Contacto</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-globe-europe-africa"></i>
+                    Condiciones Generales</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-shield-shaded"></i> Politica de
+                    privacidad</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-cookie"></i> Politica de
+                    cookies</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-person-fill-exclamation"></i>
+                    Aviso legal</small></a>
+        </div>
+    </footer>
+    <!--FIN: Pie de página-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
