@@ -3,3 +3,8 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+.carousel-item .carrusel{
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+}
